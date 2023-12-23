@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std; 
 int main()
@@ -6,7 +7,7 @@ int main()
 //    setlocale(LC_ALL, "Russian");
     system("chcp 1251>nul");
     string text, a, b;
-    cout << "Введите текст: "; cin >> text;
+    cout << "Введите текст: "; getline(cin, text);// >> text;
     int length = text.length();
     a = text[0];
     b = text[length - 1];
